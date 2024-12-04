@@ -3,7 +3,7 @@ from mistralai.client import MistralClient
 from mistralai.models.chat_completion import ChatMessage
 
 # Initialize MistralAI client
-api_key = "DNZPycV5sBVkL0tFJinZAutL4J8mMlEr"
+api_key = os.getenv("GROQ_API_KEY")
 model = "mistral-large-latest"
 client = MistralClient(api_key=api_key)
 
